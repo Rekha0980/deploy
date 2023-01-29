@@ -4,8 +4,8 @@ const db=require("./db.json")
  const app=express()
 app.use(express.json())
 
-app.get("/product",(req,res)=>{
-    res.send(db.students)
+app.get("/products",(req,res)=>{
+    res.send(db.products)
 })
 
 app.get("/",(req,res)=>{
